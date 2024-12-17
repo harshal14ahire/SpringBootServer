@@ -1,0 +1,34 @@
+<div class="form">
+  <!-- Show this block if 'submitted' is false -->
+  <div *ngIf="!submitted">
+    <div class="formele">
+      <label for="title">Title Of Tutorial</label>
+      <input
+        type="text"
+        class="forminput"
+        id="title"
+        required
+        [(ngModel)]="tutorial.title"
+        name="title"
+      />
+    </div>
+    <div class="formele">
+      <label for="description">Description</label>
+      <input
+        class="forminput"
+        type="text"
+        id="description"
+        required
+        [(ngModel)]="tutorial.description"
+        name="description"
+      />
+    </div>
+    <button (click)="saveTutorial()" class="savebtn">Submit</button>
+  </div>
+
+  <!-- Show this block if 'submitted' is true -->
+  <div *ngIf="submitted">
+    <h4>Tutorial was Submitted Successfully</h4>
+    <button class="addtutorial" (click)="newTutorial()">Add</button>
+  </div>
+</div>

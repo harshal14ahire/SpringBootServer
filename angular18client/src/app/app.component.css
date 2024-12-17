@@ -1,0 +1,42 @@
+
+.navbar {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: #333; 
+    height: 50px;
+    padding: 10px 20px; 
+    list-style: none; 
+  }
+
+
+  .navbar a {
+    color: white; /* Text color */
+    text-decoration: none;
+     /* Removes underline from links */
+    padding: 10px 15px; /* Adds space inside each link */
+    font-size: 20px; /* Adjusts font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for navbar links */
+  .navbar a:hover {
+    background-color: #575757; /* Slightly lighter background */
+    color: #ffd700; /* Changes text color on hover */
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
+  
+  .navele {
+    list-style: none; /* Removes bullet points */
+    margin: 0 10px; /* Adds space between list items */
+  }
+  
+  /* For "active" tabs, if required */
+  .navtab.active {
+    background-color: #4d4d4d;
+    color: #ffd700 !important;/* Active tab background */
+    border-radius: 4px; /* Optional rounded corners */
+  }
+  
